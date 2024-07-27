@@ -6,3 +6,5 @@ This project is a full-stack web application for managing and viewing recipes. I
 
 - User authentication (register and login)
 - Create and view recipes
+- Responsive design
+- User-friendly interface
