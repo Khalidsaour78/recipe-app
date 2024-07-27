@@ -8,3 +8,18 @@ This project is a full-stack web application for managing and viewing recipes. I
 - Create and view recipes
 - Responsive design
 - User-friendly interface
+
+## Technologies Used
+
+- Backend: Node.js, Express
+- Frontend: React, Axios, React Router
+- Database: MongoDB, Mongoose
+- Authentication: JSON Web Tokens (JWT)
+- Styling: CSS
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- MongoDB
