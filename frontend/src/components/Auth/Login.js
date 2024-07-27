@@ -1,17 +1,22 @@
-import React, { useState, useContext } from "react";
-import AuthContext from "../../context/AuthContext";
+import React, { useState, useContext } from "react"; // Import React, useState, and useContext from react
+import AuthContext from "../../context/AuthContext"; // Import AuthContext from the context folder
 
 const Login = () => {
+  // Initialize user state with email and password fields
   const [user, setUser] = useState({
     email: "",
     password: "",
   });
 
+  // Destructure email and password from the user state
   const { email, password } = user;
+  // Get the login function from AuthContext
   const { login } = useContext(AuthContext);
 
+  // Handle input changes and update the user state
   const onChange = (e) => setUser({ ...user, [e.target.name]: e.target.value });
 
+  // Handle form submission and call the login function
   const onSubmit = (e) => {
     e.preventDefault();
     login({ email, password });
@@ -25,18 +30,18 @@ const Login = () => {
         name="email"
         value={email}
         onChange={onChange}
-        required
+        required // Mark the input as required
       />
       <input
         type="password"
         name="password"
         value={password}
         onChange={onChange}
-        required
+        required // Mark the input as required
       />
-      <button type="submit">Login</button>
+      <button type="submit">Login</button> // Button to submit the form
     </form>
   );
 };
 
-export default Login;
+export default Login; // Export the Login component
