@@ -23,3 +23,12 @@ This project is a full-stack web application for managing and viewing recipes. I
 
 - Node.js
 - MongoDB
+
+### Installation
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/Khalidsaour78/recipe-app.git
+cd recipe-app
+```
